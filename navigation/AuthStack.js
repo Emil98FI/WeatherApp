@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-
+import SplashScreen from 'react-native-splash-screen';
 import SignUp from '../screens/signUpScreen';
 import OnBoardingScreen from '../screens/OnboardingScreen';
 import LoginScreen from '../screens/LoginScreen';
@@ -22,7 +22,6 @@ const AuthStack = () => {
       } else {
         setIsFirstLaunch(false);
         console.log(value);
-        AsyncStorage.clear();
       }
     });
     GoogleSignin.configure({

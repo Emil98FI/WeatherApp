@@ -56,13 +56,6 @@ const SignUp = ({navigation}) => {
         backgroundColor="#f5e7ea"
         onPress={() => {}}
       />
-      <SocialButton
-        buttonTitle="Sign In with Facebook"
-        btnType="facebook"
-        color="#4867aa"
-        backgroundColor="#e6eaf4"
-        onPress={() => {}}
-      />
     </View>
   );
 };

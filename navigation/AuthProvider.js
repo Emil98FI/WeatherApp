@@ -1,5 +1,6 @@
 import React, {createContext, useState} from 'react';
 import auth from '@react-native-firebase/auth';
+import SplashScreen from 'react-native-splash-screen';
 import {GoogleSignin} from '@react-native-community/google-signin';
 export const AuthContext = createContext();
 

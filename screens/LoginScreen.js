@@ -21,11 +21,8 @@ const LoginScreen = ({navigation}) => {
   const {login, googleLogin} = useContext(AuthContext);
   return (
     <View style={styles.container}>
-      <Image
-        source={require('../assets/rn-social-logo.png')}
-        style={styles.logo}
-      />
-      <Text style={styles.text}>RN Social App</Text>
+      <Image source={require('../assets/weather4.png')} style={styles.logo} />
+      <Text style={styles.text}>Weather Home</Text>
       <FormInput
         labelValue={email}
         onChangeText={(userEmail) => setEmail(userEmail)}
@@ -62,13 +59,7 @@ const LoginScreen = ({navigation}) => {
         backgroundColor="#f5e7ea"
         onPress={() => googleLogin()}
       />
-      <SocialButton
-        buttonTitle="Sign In with Facebook"
-        btnType="facebook"
-        color="#4867aa"
-        backgroundColor="#e6eaf4"
-        onPress={() => {}}
-      />
+
       <TouchableOpacity
         style={styles.forgotButton}
         onPress={() => navigation.navigate('SignUp')}>
