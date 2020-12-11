@@ -1,3 +1,5 @@
+//Emil Brummer 1800720
+
 import React, {useContext, useState} from 'react';
 import {
   View,
@@ -51,14 +53,6 @@ const LoginScreen = ({navigation}) => {
         onPress={() => navigation.navigate('SignUp')}>
         <Text style={styles.navButton}>Forgot Password?</Text>
       </TouchableOpacity>
-
-      <SocialButton
-        buttonTitle="Sign In with Google"
-        btnType="google"
-        color="#de4d41"
-        backgroundColor="#f5e7ea"
-        onPress={() => googleLogin()}
-      />
 
       <TouchableOpacity
         style={styles.forgotButton}

@@ -1,6 +1,10 @@
+//Emil Brummer 1800720
+
 import React from 'react';
 import {View, Text, Button, StyleSheet, Image} from 'react-native';
 import Onboarding from 'react-native-onboarding-swiper';
+
+// Defining the onboarding screen
 
 const OnboardingScreen = ({navigation}) => {
   return (

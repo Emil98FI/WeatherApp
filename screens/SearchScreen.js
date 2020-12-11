@@ -1,3 +1,5 @@
+//Emil Brummer 1800720
+
 import React, {useContext, useState} from 'react';
 import {View, Text, StyleSheet, FlatList} from 'react-native';
 import {TextInput, Button, Card} from 'react-native-paper';
@@ -22,10 +24,6 @@ const HomeScreen = ({navigation}) => {
       });
   };
 
-  const btnClick = async () => {
-    await AsyncStorage.setItem('newcity', city);
-    navigation.navigate('home', {city: city});
-  };
   const listClick = async (cityname) => {
     setCity(cityname);
     await AsyncStorage.setItem('newcity', cityname);

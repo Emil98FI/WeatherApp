@@ -1,3 +1,5 @@
+//Emil Brummer 1800720
+
 import {NavigationContainer} from '@react-navigation/native';
 import React, {useContext, useState, useEffect} from 'react';
 import AuthStack from './AuthStack';
@@ -18,10 +20,12 @@ const Routes = () => {
 
   useEffect(() => {
     const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
-    return subscriber; // unsubscribe on unmount
+    return subscriber;
   });
 
   if (initializing) return null;
+
+  //Conditionally returning Home screen if user is signed in
 
   return (
     <NavigationContainer>

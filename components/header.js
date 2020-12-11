@@ -1,3 +1,5 @@
+//Emil Brummer 1800720
+
 import React, {useEffect, Component} from 'react';
 
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';

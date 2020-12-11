@@ -1,3 +1,5 @@
+//Emil Brummer 1800720
+
 import React, {useEffect, useState} from 'react';
 import {} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -13,6 +15,8 @@ const AppStack = createStackNavigator();
 const AuthStack = () => {
   const [isFirstLaunch, setIsFirstLaunch] = React.useState(null);
   let routename;
+
+  //Check if first login
 
   useEffect(() => {
     AsyncStorage.getItem('alreadyLaunched').then((value) => {

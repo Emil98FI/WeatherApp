@@ -1,3 +1,5 @@
+//Emil Brummer 1800720
+
 import React from 'react';
 import {Text, TouchableOpacity, StyleSheet} from 'react-native';
 import {windowHeight, windowWidth} from '../utils/Dimentions';

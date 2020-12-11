@@ -1,3 +1,5 @@
+//Emil Brummer 1800720
+
 import React, {useContext, useEffect, useState} from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import FormButton from '../components/FormButton';
@@ -75,14 +77,14 @@ const HomeScreen = (props) => {
           margin: 5,
           padding: 12,
         }}>
-        <Title style={{color: '#00aaff'}}>Temperature - {info.temp}°C</Title>
+        <Title style={{color: '#00aaff'}}>Temperature : {info.temp}°C</Title>
       </Card>
       <Card
         style={{
           margin: 5,
           padding: 12,
         }}>
-        <Title style={{color: '#00aaff'}}>Humidity - {info.humidity}%</Title>
+        <Title style={{color: '#00aaff'}}>Humidity : {info.humidity}%</Title>
       </Card>
       <Card
         style={{
@@ -90,7 +92,7 @@ const HomeScreen = (props) => {
           padding: 12,
         }}>
         <Title style={{color: '#00aaff'}}>
-          Description- "{info.desc.toUpperCase()}"
+          Description: "{info.desc.toUpperCase()}"
         </Title>
       </Card>
 

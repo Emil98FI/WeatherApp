@@ -1,14 +1,19 @@
+//Emil Brummer 1800720
+
 import React, {useEffect, Component} from 'react';
 import {StyleSheet, View, Text, StatusBar} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/HomeScreen';
 import SearchScreen from '../screens/SearchScreen';
+
 import SplashScreen from 'react-native-splash-screen';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {NavigationContainer} from '@react-navigation/native';
+
 const tabs = createBottomTabNavigator();
 const AppStack = () => {
   return (
+    //Tab navigator for the main app
     <>
       <StatusBar barStyle="dark-content" backgroundColor="#00aaff" />
 

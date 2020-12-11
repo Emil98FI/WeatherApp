@@ -1,5 +1,7 @@
 import React, {useEffect, useContext, Component} from 'react';
 
+//Emil Brummer 1800720
+
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {Appbar, Title} from 'react-native-paper';
 import {View, Text, FormButton, StyleSheet} from 'react-native';

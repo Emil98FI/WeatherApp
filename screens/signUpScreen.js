@@ -1,3 +1,5 @@
+//Emil Brummer 1800720
+
 import React, {useContext, useState} from 'react';
 import {
   View,
@@ -47,14 +49,6 @@ const SignUp = ({navigation}) => {
       <FormButton
         buttonTitle="Sign Up"
         onPress={() => register(email, password)}
-      />
-
-      <SocialButton
-        buttonTitle="Sign In with Google"
-        btnType="google"
-        color="#de4d41"
-        backgroundColor="#f5e7ea"
-        onPress={() => {}}
       />
     </View>
   );
